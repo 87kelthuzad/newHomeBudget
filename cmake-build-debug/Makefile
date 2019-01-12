@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mateusz/CLionProjects/HomeBudget/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,33 @@ HomeBudget/fast:
 	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/build
 .PHONY : HomeBudget/fast
 
+Login.o: Login.cpp.o
+
+.PHONY : Login.o
+
+# target to build an object file
+Login.cpp.o:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Login.cpp.o
+.PHONY : Login.cpp.o
+
+Login.i: Login.cpp.i
+
+.PHONY : Login.i
+
+# target to preprocess a source file
+Login.cpp.i:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Login.cpp.i
+.PHONY : Login.cpp.i
+
+Login.s: Login.cpp.s
+
+.PHONY : Login.s
+
+# target to generate assembly for a file
+Login.cpp.s:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Login.cpp.s
+.PHONY : Login.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... HomeBudget"
 	@echo "... edit_cache"
+	@echo "... Login.o"
+	@echo "... Login.i"
+	@echo "... Login.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

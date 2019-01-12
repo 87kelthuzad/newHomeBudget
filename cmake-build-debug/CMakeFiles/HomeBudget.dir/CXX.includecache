@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/mateusz/CLionProjects/HomeBudget/main.cpp
-iostream
+/home/mateusz/CLionProjects/HomeBudget/Login.cpp
+Login.h
+/home/mateusz/CLionProjects/HomeBudget/Login.h
+
+/home/mateusz/CLionProjects/HomeBudget/Login.h
+string
 -
 
