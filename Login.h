@@ -26,8 +26,8 @@ public:
     ~Login();
     Login(string nick, string password);
 
-    void setNick( string nick ) { this->nick = nick; }
-    void setPassword( string password ) { this->password = password; }
+    void setNick(string nick) { this->nick = nick; }
+    void setPassword(string password) { this->password = password; }
 
 };
 

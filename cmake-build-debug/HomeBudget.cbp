@@ -90,6 +90,12 @@
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Controller.h">
 			<Option target="HomeBudget"/>
 		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp">
+			<Option target="HomeBudget"/>
+		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/FileCSV.h">
+			<Option target="HomeBudget"/>
+		</Unit>
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Login.cpp">
 			<Option target="HomeBudget"/>
 		</Unit>
