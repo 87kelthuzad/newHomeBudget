@@ -15,18 +15,16 @@ struct recordLogin {
 };
 
 class Login {
-
 private:
-
     string nick;
     string password;
 
     void comparisonOfLoginWithCVS();
 
 public:
-
     Login();
     ~Login();
+    Login(string nick, string password);
 
     void setNick( string nick ) { this->nick = nick; }
     void setPassword( string password ) { this->password = password; }
