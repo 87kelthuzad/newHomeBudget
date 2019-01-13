@@ -5,7 +5,9 @@
 #ifndef HOMEBUDGET_LOGIN_H
 #define HOMEBUDGET_LOGIN_H
 
+#include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -16,8 +18,11 @@ struct recordLogin {
 
 class Login {
 private:
+    recordLogin sRecordLogin;
     string nick;
     string password;
+    string pathToLoginsFile = "/home/mateusz/CLionProjects/HomeBudget/login.csv";
+    vector<string> allLoginsCSV;
 
     void comparisonOfLoginWithCVS();
 
@@ -28,7 +33,9 @@ public:
 
     void setNick(string nick) { this->nick = nick; }
     void setPassword(string password) { this->password = password; }
-
+    vector<string> & getVectorAllLoginCSV() { return allLoginsCSV; }
+    string getPathToLoginsFile() { return pathToLoginsFile; }
+    void test();
 };
 
 

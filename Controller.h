@@ -6,6 +6,8 @@
 #define HOMEBUDGET_CONTROLLER_H
 
 #include "Login.h"
+#include "Ui.h"
+#include "FileCSV.h"
 
 class Controller {
 private:
@@ -15,7 +17,8 @@ public:
     Controller();
     ~Controller();
 
-    void mainLoop() {};
+    void mainLoop();
+    void loopLogin();
 
 };
 

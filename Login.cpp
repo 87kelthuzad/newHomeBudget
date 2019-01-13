@@ -15,3 +15,8 @@ Login::Login(string nick, string password) {
 void Login::comparisonOfLoginWithCVS() {
 
 }
+
+void Login::test() {
+    cout << sRecordLogin.nickCSV << endl;
+    cout << sRecordLogin.passwordCSV << endl;
+}
