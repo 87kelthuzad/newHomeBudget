@@ -17,6 +17,8 @@ public:
 
     void showMainMenu();
     void showLogin();
+    void successLogin();
+    void failLogin();
 
 };
 
