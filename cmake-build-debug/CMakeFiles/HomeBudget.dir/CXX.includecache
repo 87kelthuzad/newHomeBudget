@@ -18,10 +18,6 @@ Ui.h
 FileCSV.h
 /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
 
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp
-FileCSV.h
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.h
-
 /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
 fstream
 -
@@ -32,6 +28,10 @@ string
 vector
 -
 
+/home/mateusz/CLionProjects/HomeBudget/Login.cpp
+Login.h
+/home/mateusz/CLionProjects/HomeBudget/Login.h
+
 /home/mateusz/CLionProjects/HomeBudget/Login.h
 iostream
 -
@@ -41,6 +41,8 @@ vector
 -
 
 /home/mateusz/CLionProjects/HomeBudget/Ui.h
+iostream
+-
 string
 -
 

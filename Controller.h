@@ -12,6 +12,10 @@
 class Controller {
 private:
     Login login;
+    Ui ui;
+
+    string nick;
+    string password;
 
 public:
     Controller();
