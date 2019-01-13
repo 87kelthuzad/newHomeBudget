@@ -1,7 +1,10 @@
 #include <iostream>
+#include "Controller.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Hello, World!" << std::endl;
+
+    Controller controller;
+    controller.mainLoop();
+
     return 0;
 }
