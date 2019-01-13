@@ -23,8 +23,7 @@ private:
     string password;
     string pathToLoginsFile = "/home/mateusz/CLionProjects/HomeBudget/login.csv";
     vector<string> allLoginsCSV;
-
-    void comparisonOfLoginWithCVS();
+    vector<recordLogin> all;
 
 public:
     Login();
@@ -35,7 +34,7 @@ public:
     void setPassword(string password) { this->password = password; }
     vector<string> & getVectorAllLoginCSV() { return allLoginsCSV; }
     string getPathToLoginsFile() { return pathToLoginsFile; }
-    void test();
+    bool comparisonOfLoginWithCVS(string nick, string password);
 };
 
 

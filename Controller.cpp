@@ -7,7 +7,7 @@
 Controller::Controller() {};
 Controller::~Controller() {};
 
-void Controller::mainLoop() {
+void Controller::loopLogin() {
     FileCSV fileCSV;
     bool isOpenFile = fileCSV.open(login.getPathToLoginsFile());
     if (!isOpenFile) {
@@ -15,5 +15,17 @@ void Controller::mainLoop() {
     }
 
     fileCSV.read(login.getVectorAllLoginCSV());
+
+    ui.showLogin();
+    cout << "login: ";
+    cin >> nick;
+    cout << "\npassword: ";
+    cin >> password;
+    cout << endl;
+    if (login.comparisonOfLoginWithCVS(nick, password)) {
+        cout << "tak" <<  endl;
+    } else {
+        cout << "nie" << endl;
+    }
 
 }
