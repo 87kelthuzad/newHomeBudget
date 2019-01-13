@@ -5,6 +5,7 @@
 #ifndef HOMEBUDGET_UI_H
 #define HOMEBUDGET_UI_H
 
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -14,8 +15,8 @@ public:
     Ui();
     ~Ui();
 
-    string showMainMenu() {};
-    string showLogin() {};
+    void showMainMenu();
+    void showLogin();
 
 };
 
