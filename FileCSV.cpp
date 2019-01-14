@@ -7,7 +7,7 @@
 FileCSV::FileCSV() {};
 FileCSV::~FileCSV() {};
 
-bool FileCSV::open(string pathToFile) {
+bool FileCSV::open(const string & pathToFile) {
     setPathToFile(pathToFile);
     file.open(getPathToFile(), ios::in | ios::out);
     if (!file.is_open()) {
@@ -23,5 +23,9 @@ void FileCSV::read(vector<string> &v) {
         v.push_back(line);
     }
     file.close();
+}
+
+void FileCSV::save(const string & pathToFile, const string & record) {
+    bool a = open(pathToFile);
 }
 

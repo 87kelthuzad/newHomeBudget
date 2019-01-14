@@ -21,13 +21,13 @@ public:
     FileCSV();
     ~FileCSV();
 
-    void setPathToFile(string pathToFile) { this->pathToFile = pathToFile; };
+    void setPathToFile(const string & pathToFile) { this->pathToFile = pathToFile; };
     inline string getPathToFile() { return pathToFile; };
     inline string getDelimeter() { return delimeter; };
 
-    bool open(string pathToFile);
+    bool open(const string & pathToFile);
     void read(vector<string> &v);
-    void save(string pathToFile);
+    void save(const string & pathToFile, const string & record);
 };
 
 

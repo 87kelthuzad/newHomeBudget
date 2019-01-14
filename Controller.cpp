@@ -18,14 +18,26 @@ void Controller::loopLogin() {
 
     ui.showLogin();
     cout << "login: ";
-    cin >> nick;
+    login.setNick(cin);
     cout << "\npassword: ";
-    cin >> password;
+    login.setPassword(cin);
     cout << endl;
-    if (login.comparisonOfLoginWithCVS(nick, password)) {
-        cout << "tak" <<  endl;
+
+    if (login.comparisonOfNickAndPasswordWithCVS(login.getNick(), login.getPassword())) {
+        ui.successLogin();
     } else {
-        cout << "nie" << endl;
+        ui.failLogin();
+        char option;
+        cin >> option;
+        option = toupper(option);
+        switch (option) {
+            case 'Y':
+                cout << "tak" << endl;
+            case 'N':
+                cout << "nie" << endl;
+            default:
+                cout << "Wrong answer" << endl;
+        }
     }
 
 }

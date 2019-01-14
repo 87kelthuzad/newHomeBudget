@@ -26,5 +26,7 @@ void Ui::successLogin() {
 void Ui::failLogin() {
     cout << "====================================================" << endl;
     cout << "============ Logowanie nie powiodło się ============" << endl;
+    cout << "========== Czy chcesz dodać urzytkownika? ==========" << endl;
+    cout << "=================== [Y]es or [N]o ==================" << endl;
     cout << "====================================================" << endl;
 }
