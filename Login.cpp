@@ -7,12 +7,7 @@
 Login::Login() {};
 Login::~Login() {};
 
-Login::Login(string nick, string password) {
-    setNick(nick);
-    setPassword(password);
-}
-
-bool Login::comparisonOfLoginWithCVS(string nick, string password) {
+bool Login::comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password) {
     for (auto const& value: allLoginsCSV) {
         string record = value;
         size_t pos = 0;
@@ -23,9 +18,8 @@ bool Login::comparisonOfLoginWithCVS(string nick, string password) {
             record.erase(0, pos + delimiter.length());
             if (token.compare(nick) == 0 && record.compare(password) == 0) {
                 return true;
-            } else {
-                return false;
             }
         }
     }
+    return false;
 }
