@@ -8,11 +8,13 @@
 #include "Login.h"
 #include "Ui.h"
 #include "FileCSV.h"
+#include "Readable.h"
 
 class Controller {
 private:
     Login login;
     Ui ui;
+    Readable readable;
 
     string nick;
     string password;

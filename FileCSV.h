@@ -10,6 +10,8 @@
 #include <string>
 #include <vector>
 
+#include "Readable.h"
+
 using namespace std;
 
 class FileCSV {
@@ -17,7 +19,9 @@ private:
     string pathToFile;
     string delimeter = ",";
     fstream file;
+    Readable readable;
 public:
+
     FileCSV();
     ~FileCSV();
 
@@ -26,7 +30,7 @@ public:
     inline string getDelimeter() { return delimeter; };
 
     bool open(const string & pathToFile);
-    void read(vector<string> &v);
+    void read(vector<string> &v, Readable & readable);
     void save(const string & pathToFile, const string & record);
 };
 
