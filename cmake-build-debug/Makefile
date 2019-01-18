@@ -204,6 +204,33 @@ Login.cpp.s:
 	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Login.cpp.s
 .PHONY : Login.cpp.s
 
+Readable.o: Readable.cpp.o
+
+.PHONY : Readable.o
+
+# target to build an object file
+Readable.cpp.o:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Readable.cpp.o
+.PHONY : Readable.cpp.o
+
+Readable.i: Readable.cpp.i
+
+.PHONY : Readable.i
+
+# target to preprocess a source file
+Readable.cpp.i:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Readable.cpp.i
+.PHONY : Readable.cpp.i
+
+Readable.s: Readable.cpp.s
+
+.PHONY : Readable.s
+
+# target to generate assembly for a file
+Readable.cpp.s:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Readable.cpp.s
+.PHONY : Readable.cpp.s
+
 Ui.o: Ui.cpp.o
 
 .PHONY : Ui.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Login.o"
 	@echo "... Login.i"
 	@echo "... Login.s"
+	@echo "... Readable.o"
+	@echo "... Readable.i"
+	@echo "... Readable.s"
 	@echo "... Ui.o"
 	@echo "... Ui.i"
 	@echo "... Ui.s"

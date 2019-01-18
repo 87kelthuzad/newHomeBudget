@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HomeBudget.dir/Controller.cpp.o"
   "CMakeFiles/HomeBudget.dir/Ui.cpp.o"
   "CMakeFiles/HomeBudget.dir/FileCSV.cpp.o"
+  "CMakeFiles/HomeBudget.dir/Readable.cpp.o"
   "HomeBudget.pdb"
   "HomeBudget"
 )

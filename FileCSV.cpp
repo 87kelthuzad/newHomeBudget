@@ -17,10 +17,11 @@ bool FileCSV::open(const string & pathToFile) {
     return true;
 }
 
-void FileCSV::read(vector<string> &v) {
+void FileCSV::read(vector<string> &v, Readable & readable) {
     string line;
     while ( getline (file,line) ) {
-        v.push_back(line);
+//        readable.getVector().push_back(line);
+        readable.addRecordToVectorLogin(line, readable.getVector());
     }
     file.close();
 }

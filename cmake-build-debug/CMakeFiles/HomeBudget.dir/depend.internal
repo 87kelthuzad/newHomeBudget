@@ -6,13 +6,19 @@ CMakeFiles/HomeBudget.dir/Controller.cpp.o
  /home/mateusz/CLionProjects/HomeBudget/Controller.h
  /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
  /home/mateusz/CLionProjects/HomeBudget/Login.h
+ /home/mateusz/CLionProjects/HomeBudget/Readable.h
  /home/mateusz/CLionProjects/HomeBudget/Ui.h
 CMakeFiles/HomeBudget.dir/FileCSV.cpp.o
  /home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp
  /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
+ /home/mateusz/CLionProjects/HomeBudget/Readable.h
 CMakeFiles/HomeBudget.dir/Login.cpp.o
  /home/mateusz/CLionProjects/HomeBudget/Login.cpp
  /home/mateusz/CLionProjects/HomeBudget/Login.h
+ /home/mateusz/CLionProjects/HomeBudget/Readable.h
+CMakeFiles/HomeBudget.dir/Readable.cpp.o
+ /home/mateusz/CLionProjects/HomeBudget/Readable.cpp
+ /home/mateusz/CLionProjects/HomeBudget/Readable.h
 CMakeFiles/HomeBudget.dir/Ui.cpp.o
  /home/mateusz/CLionProjects/HomeBudget/Ui.cpp
  /home/mateusz/CLionProjects/HomeBudget/Ui.h
@@ -20,5 +26,6 @@ CMakeFiles/HomeBudget.dir/main.cpp.o
  /home/mateusz/CLionProjects/HomeBudget/Controller.h
  /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
  /home/mateusz/CLionProjects/HomeBudget/Login.h
+ /home/mateusz/CLionProjects/HomeBudget/Readable.h
  /home/mateusz/CLionProjects/HomeBudget/Ui.h
  /home/mateusz/CLionProjects/HomeBudget/main.cpp

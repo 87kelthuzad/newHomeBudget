@@ -14,9 +14,12 @@ void Controller::loopLogin() {
         exit(EXIT_FAILURE);
     }
 
-    fileCSV.read(login.getVectorAllLoginCSV());
+    fileCSV.read(login.getVectorAllLoginCSV(), readable);
+
+    readable.test();
 
     ui.showLogin();
+
     cout << "login: ";
     login.setNick(cin);
     cout << "\npassword: ";

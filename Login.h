@@ -9,19 +9,16 @@
 #include <string>
 #include <vector>
 
+#include "Readable.h"
+
 using namespace std;
 
-struct recordLogin {
-    string nick;
-    string password;
-};
-
-class Login {
+class Login :public Readable{
 private:
     recordLogin sRecordLogin;
     string pathToLoginsFile = "/home/mateusz/CLionProjects/HomeBudget/login.csv";
     vector<string> allLoginsCSV;
-    vector<recordLogin> all;
+//    vector<recordLogin1> all;
 
 public:
     Login();
