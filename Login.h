@@ -13,6 +13,13 @@
 
 using namespace std;
 
+class Readable;
+
+struct recordLogin {
+    string nick;
+    string password;
+};
+
 class Login {
 private:
     recordLogin sRecordLogin;
@@ -27,7 +34,7 @@ public:
     inline string getNick() { return sRecordLogin.nick; }
     inline string getPassword() { return  sRecordLogin.password; }
     string getPathToLoginsFile() { return pathToLoginsFile; }
-    bool comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password, Readable & readable);
+    bool comparisonOfNickAndPasswordWithCVS(Readable & readable);
 };
 
 

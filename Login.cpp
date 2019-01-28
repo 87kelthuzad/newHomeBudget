@@ -7,9 +7,9 @@
 Login::Login() {};
 Login::~Login() {};
 
-bool Login::comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password, Readable & readable) {
-    for (auto value: readable.getVector()) {
-        if (value.nick == nick && value.password == password) {
+bool Login::comparisonOfNickAndPasswordWithCVS(Readable & readable) {
+    for (auto value: readable.getVectorLogin()) {
+        if (value.nick == getNick() && value.password == getPassword()) {
             return true;
         }
     }

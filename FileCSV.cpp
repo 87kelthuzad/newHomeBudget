@@ -20,12 +20,14 @@ bool FileCSV::open(const string & pathToFile) {
 void FileCSV::read(Readable & readable) {
     string line;
     while ( getline (file,line) ) {
-        readable.addRecordToVectorLogin(line, readable.getVector());
+        readable.addRecordToVectorLogin(line, readable.getVectorLogin());
     }
     file.close();
 }
 
-void FileCSV::save(const string & pathToFile, const string & record) {
-    bool a = open(pathToFile);
+void FileCSV::saveLogin(const string &pathToFile, Login & login) {
+    file.open(pathToFile, ios_base::app );
+    file << login.getNick() << "," << login.getPassword() << "\n";
+    file.close();
 }
 

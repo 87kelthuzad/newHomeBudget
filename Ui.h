@@ -19,7 +19,7 @@ public:
     void showLogin();
     void successLogin();
     void failLogin();
-
+    void ending();
 };
 
 

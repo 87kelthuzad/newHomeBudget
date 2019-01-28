@@ -11,7 +11,9 @@
 #include <vector>
 
 #include "Readable.h"
+#include "Login.h"
 class Readable;
+class Login;
 
 using namespace std;
 
@@ -20,6 +22,7 @@ private:
     string pathToFile;
     string delimeter = ",";
     fstream file;
+
 public:
 
     FileCSV();
@@ -31,7 +34,7 @@ public:
 
     bool open(const string & pathToFile);
     void read(Readable & readable);
-    void save(const string & pathToFile, const string & record);
+    void saveLogin(const string &pathToFile, Login & login);
 };
 
 #endif //HOMEBUDGET_FILECSV_H

@@ -14,11 +14,16 @@ void Readable::addRecordToVectorLogin(const string &line, vector<recordLogin> & 
     for (int index = 0; index < size ; ++index) {
         if (index%2 > 0) {
             recordLogin r = {nick, splitString[index]};
-            getVector().push_back(r);
+            getVectorLogin().push_back(r);
         } else {
             nick = splitString[index];
         }
     }
+}
+
+void Readable::addRecordToVectorLogin(Login & login, vector<recordLogin> & v) {
+    recordLogin r = {login.getNick(),login.getPassword()};
+    getVectorLogin().push_back(r);
 }
 
 vector<string> Readable::split(const string& s, char delimiter)
