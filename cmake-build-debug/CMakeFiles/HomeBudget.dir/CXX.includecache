@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/mateusz/CLionProjects/HomeBudget/Controller.cpp
-Controller.h
-/home/mateusz/CLionProjects/HomeBudget/Controller.h
-
-/home/mateusz/CLionProjects/HomeBudget/Controller.h
-Login.h
-/home/mateusz/CLionProjects/HomeBudget/Login.h
-Ui.h
-/home/mateusz/CLionProjects/HomeBudget/Ui.h
-FileCSV.h
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.h
-Readable.h
-/home/mateusz/CLionProjects/HomeBudget/Readable.h
-
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp
-FileCSV.h
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.h
-
-/home/mateusz/CLionProjects/HomeBudget/FileCSV.h
-fstream
--
-iostream
--
-string
--
-vector
--
-Readable.h
-/home/mateusz/CLionProjects/HomeBudget/Readable.h
-
 /home/mateusz/CLionProjects/HomeBudget/Login.cpp
 Login.h
 /home/mateusz/CLionProjects/HomeBudget/Login.h
@@ -50,10 +20,6 @@ vector
 Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
 
-/home/mateusz/CLionProjects/HomeBudget/Readable.cpp
-Readable.h
-/home/mateusz/CLionProjects/HomeBudget/Readable.h
-
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
 string
 -
@@ -63,16 +29,4 @@ sstream
 -
 iostream
 -
-
-/home/mateusz/CLionProjects/HomeBudget/Ui.h
-iostream
--
-string
--
-
-/home/mateusz/CLionProjects/HomeBudget/main.cpp
-iostream
--
-Controller.h
-/home/mateusz/CLionProjects/HomeBudget/Controller.h
 

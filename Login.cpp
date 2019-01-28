@@ -7,18 +7,10 @@
 Login::Login() {};
 Login::~Login() {};
 
-bool Login::comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password) {
-    for (auto const& value: allLoginsCSV) {
-        string record = value;
-        size_t pos = 0;
-        string token;
-        string delimiter = ",";
-        while ((pos = record.find(delimiter)) != string::npos) {
-            token = value.substr(0, pos);
-            record.erase(0, pos + delimiter.length());
-            if (token.compare(nick) == 0 && record.compare(password) == 0) {
-                return true;
-            }
+bool Login::comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password, Readable & readable) {
+    for (auto value: readable.getVector()) {
+        if (value.nick == nick && value.password == password) {
+            return true;
         }
     }
     return false;

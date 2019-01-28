@@ -5,10 +5,14 @@
 #ifndef HOMEBUDGET_CONTROLLER_H
 #define HOMEBUDGET_CONTROLLER_H
 
+#include <iostream>
+
 #include "Login.h"
 #include "Ui.h"
 #include "FileCSV.h"
 #include "Readable.h"
+
+using namespace std;
 
 class Controller {
 private:

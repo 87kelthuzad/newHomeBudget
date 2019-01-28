@@ -13,12 +13,10 @@
 
 using namespace std;
 
-class Login :public Readable{
+class Login {
 private:
     recordLogin sRecordLogin;
     string pathToLoginsFile = "/home/mateusz/CLionProjects/HomeBudget/login.csv";
-    vector<string> allLoginsCSV;
-//    vector<recordLogin1> all;
 
 public:
     Login();
@@ -28,9 +26,8 @@ public:
     void setPassword(istream& stream) { stream >> sRecordLogin.password; }
     inline string getNick() { return sRecordLogin.nick; }
     inline string getPassword() { return  sRecordLogin.password; }
-    vector<string> & getVectorAllLoginCSV() { return allLoginsCSV; }
     string getPathToLoginsFile() { return pathToLoginsFile; }
-    bool comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password);
+    bool comparisonOfNickAndPasswordWithCVS(const string & nick, const string & password, Readable & readable);
 };
 
 

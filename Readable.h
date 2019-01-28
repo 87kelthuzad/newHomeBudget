@@ -12,9 +12,14 @@
 
 using namespace std;
 
+struct recordLogin {
+    string nick;
+    string password;
+};
+
 class Readable {
 private:
-    string delimeter = ",";
+    char delimeter = ',';
 
 public:
     Readable();
@@ -27,13 +32,10 @@ public:
 
     vector<recordLogin> vRecordLogin;
 
-    void addRecordToVectorLogin(const string & line, vector<Readable::recordLogin> & v);
+    inline char getDelimeter() { return delimeter; }
+    void addRecordToVectorLogin(const string & line, vector<recordLogin> & v);
     vector<recordLogin> & getVector() { return vRecordLogin; }
     vector<string> split(const std::string& s, char delimiter);
-    void test();
 };
-
-
-
 
 #endif //HOMEBUDGET_READABLE_H
