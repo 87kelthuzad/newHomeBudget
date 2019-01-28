@@ -14,9 +14,12 @@ void Controller::loopLogin() {
         exit(EXIT_FAILURE);
     }
 
-    fileCSV.read(login.getVectorAllLoginCSV(), readable);
+    fileCSV.read(readable);
 
-    readable.test();
+//    for (auto item : readable.getVector()) {
+//        cout << item.nick << endl;
+//        cout << item.password << endl;
+//    }
 
     ui.showLogin();
 
@@ -26,7 +29,7 @@ void Controller::loopLogin() {
     login.setPassword(cin);
     cout << endl;
 
-    if (login.comparisonOfNickAndPasswordWithCVS(login.getNick(), login.getPassword())) {
+    if (login.comparisonOfNickAndPasswordWithCVS(login.getNick(), login.getPassword(), readable)) {
         ui.successLogin();
     } else {
         ui.failLogin();
