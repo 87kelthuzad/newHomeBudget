@@ -9,13 +9,11 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
+#include "Login.h"
 
 using namespace std;
 
-struct recordLogin {
-    string nick;
-    string password;
-};
+class Login;
 
 class Readable {
 private:
@@ -34,7 +32,8 @@ public:
 
     inline char getDelimeter() { return delimeter; }
     void addRecordToVectorLogin(const string & line, vector<recordLogin> & v);
-    vector<recordLogin> & getVector() { return vRecordLogin; }
+    void addRecordToVectorLogin(Login & login, vector<recordLogin> & v);
+    vector<recordLogin> & getVectorLogin() { return vRecordLogin; }
     vector<string> split(const std::string& s, char delimiter);
 };
 

@@ -16,10 +16,10 @@ void Controller::loopLogin() {
 
     fileCSV.read(readable);
 
-//    for (auto item : readable.getVector()) {
-//        cout << item.nick << endl;
-//        cout << item.password << endl;
-//    }
+    for (auto item : readable.getVectorLogin()) {
+        cout << item.nick << endl;
+        cout << item.password << endl;
+    }
 
     ui.showLogin();
 
@@ -29,7 +29,7 @@ void Controller::loopLogin() {
     login.setPassword(cin);
     cout << endl;
 
-    if (login.comparisonOfNickAndPasswordWithCVS(login.getNick(), login.getPassword(), readable)) {
+    if (login.comparisonOfNickAndPasswordWithCVS(readable)) {
         ui.successLogin();
     } else {
         ui.failLogin();
@@ -39,11 +39,18 @@ void Controller::loopLogin() {
         switch (option) {
             case 'Y':
                 cout << "tak" << endl;
+                readable.addRecordToVectorLogin(login, readable.getVectorLogin());
+                fileCSV.saveLogin(login.getPathToLoginsFile(), login);
+                break;
             case 'N':
-                cout << "nie" << endl;
+                ui.ending();
+                break;
             default:
                 cout << "Wrong answer" << endl;
         }
     }
-
+    for (auto item : readable.getVectorLogin()) {
+        cout << item.nick << endl;
+        cout << item.password << endl;
+    }
 }
