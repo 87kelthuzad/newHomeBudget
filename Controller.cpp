@@ -14,13 +14,7 @@ void Controller::loopLogin() {
         exit(EXIT_FAILURE);
     }
 
-    fileCSV.read(readable);
-
-    for (auto item : readable.getVectorLogin()) {
-        cout << item.nick << endl;
-        cout << item.password << endl;
-    }
-
+    fileCSV.readLoginFile(readable);
     ui.showLogin();
 
     cout << "login: ";
@@ -44,13 +38,27 @@ void Controller::loopLogin() {
                 break;
             case 'N':
                 ui.ending();
+                exit(EXIT_FAILURE);
                 break;
             default:
                 cout << "Wrong answer" << endl;
+                exit(EXIT_FAILURE);
         }
     }
-    for (auto item : readable.getVectorLogin()) {
-        cout << item.nick << endl;
-        cout << item.password << endl;
+
+    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
+    if (!isOpenFile) {
+        exit(EXIT_FAILURE);
+    }
+
+    while (true) {
+        ui.showMainMenu();
+        int option;
+        cin >> option;
+        switch (option) {
+            case 1:
+
+                exit(EXIT_FAILURE);
+        }
     }
 }

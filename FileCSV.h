@@ -33,7 +33,7 @@ public:
     inline string getDelimeter() { return delimeter; };
 
     bool open(const string & pathToFile);
-    void read(Readable & readable);
+    void readLoginFile(Readable &readable);
     void saveLogin(const string &pathToFile, Login & login);
 };
 

@@ -11,6 +11,7 @@
 #include "Ui.h"
 #include "FileCSV.h"
 #include "Readable.h"
+#include "Transaction.h"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ private:
     Login login;
     Ui ui;
     Readable readable;
+    Transaction transaction;
 
     string nick;
     string password;

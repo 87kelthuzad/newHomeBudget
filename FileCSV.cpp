@@ -17,7 +17,7 @@ bool FileCSV::open(const string & pathToFile) {
     return true;
 }
 
-void FileCSV::read(Readable & readable) {
+void FileCSV::readLoginFile(Readable &readable) {
     string line;
     while ( getline (file,line) ) {
         readable.addRecordToVectorLogin(line, readable.getVectorLogin());
@@ -30,4 +30,6 @@ void FileCSV::saveLogin(const string &pathToFile, Login & login) {
     file << login.getNick() << "," << login.getPassword() << "\n";
     file.close();
 }
+
+
 
