@@ -37,6 +37,7 @@ public:
 
     void setCurrentUser(Login &login, Readable &readable);
 
+
 };
 
 
