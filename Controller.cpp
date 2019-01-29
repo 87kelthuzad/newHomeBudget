@@ -9,7 +9,15 @@ Controller::~Controller() {};
 
 void Controller::loopLogin() {
     FileCSV fileCSV;
-    bool isOpenFile = fileCSV.open(login.getPathToLoginsFile());
+
+    bool isOpenFile = fileCSV.open(user.getPathToFileUser());
+    if (!isOpenFile) {
+        exit(EXIT_FAILURE);
+    }
+    fileCSV.readUserFile(readable);
+    readable.setLastNumberIdUser(readable.getVectorUser().rbegin()->id);
+
+    isOpenFile = fileCSV.open(login.getPathToLoginsFile());
     if (!isOpenFile) {
         exit(EXIT_FAILURE);
     }
@@ -22,9 +30,9 @@ void Controller::loopLogin() {
     cout << "\npassword: ";
     login.setPassword(cin);
     cout << endl;
-
     if (login.comparisonOfNickAndPasswordWithCVS(readable)) {
         ui.successLogin();
+        user.setCurrentUser(login,readable);
     } else {
         ui.failLogin();
         char option;
@@ -32,9 +40,15 @@ void Controller::loopLogin() {
         option = toupper(option);
         switch (option) {
             case 'Y':
-                cout << "tak" << endl;
                 readable.addRecordToVectorLogin(login, readable.getVectorLogin());
                 fileCSV.saveLogin(login.getPathToLoginsFile(), login);
+                isOpenFile = fileCSV.open(user.getPathToFileUser());
+                if (!isOpenFile) {
+                    exit(EXIT_FAILURE);
+                }
+                fileCSV.saveUser(user.getPathToFileUser(), login, readable);
+                fileCSV.readUserFile(readable);
+                user.setCurrentUser(login,readable);
                 break;
             case 'N':
                 ui.ending();
@@ -45,14 +59,11 @@ void Controller::loopLogin() {
                 exit(EXIT_FAILURE);
         }
     }
-
     isOpenFile = fileCSV.open(user.getPathToFileUser());
     if (!isOpenFile) {
         exit(EXIT_FAILURE);
     }
-
-    fileCSV.readUserFile(readable);
-    user.setCurrentUser(login,readable);
+    cout << user.recordUser.id << "" << user.recordUser.nick << " " << user.recordUser.lastNameUser << endl;
 
 //    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
 //    if (!isOpenFile) {

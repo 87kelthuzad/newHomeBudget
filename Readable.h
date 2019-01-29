@@ -23,6 +23,7 @@ class User;
 class Readable {
 private:
     char delimeter = ',';
+    int lastNumberIdUser = 0;
 
 //    User user;
 
@@ -58,6 +59,9 @@ public:
     vector<recordUser> vUser;
 
     inline char getDelimeter() { return delimeter; }
+
+    void setLastNumberIdUser(int number) { this->lastNumberIdUser = number; }
+    int getLastNumberIdUser() { return lastNumberIdUser; }
 
     void addRecordToVectorLogin(const string & line, vector<recordLogin> & v);
     void addRecordToVectorLogin(Login & login, vector<recordLogin> & v);

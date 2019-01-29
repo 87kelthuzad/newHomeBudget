@@ -39,6 +39,8 @@ public:
     void readLoginFile(Readable &readable);
     void readUserFile(Readable &readable);
     void saveLogin(const string & pathToFile, Login & login);
+    void saveUser(const string & pathToFile, Login &login,
+            Readable &readable);
 };
 
 #endif //HOMEBUDGET_FILECSV_H
