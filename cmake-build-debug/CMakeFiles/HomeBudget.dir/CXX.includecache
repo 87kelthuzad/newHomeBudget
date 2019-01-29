@@ -21,6 +21,14 @@ FileCSV.h
 /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
 Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
+Transaction.h
+/home/mateusz/CLionProjects/HomeBudget/Transaction.h
+User.h
+/home/mateusz/CLionProjects/HomeBudget/User.h
+
+/home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp
+FileCSV.h
+/home/mateusz/CLionProjects/HomeBudget/FileCSV.h
 
 /home/mateusz/CLionProjects/HomeBudget/FileCSV.h
 fstream
@@ -35,6 +43,12 @@ Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
 Login.h
 /home/mateusz/CLionProjects/HomeBudget/Login.h
+User.h
+/home/mateusz/CLionProjects/HomeBudget/User.h
+
+/home/mateusz/CLionProjects/HomeBudget/Login.cpp
+Login.h
+/home/mateusz/CLionProjects/HomeBudget/Login.h
 
 /home/mateusz/CLionProjects/HomeBudget/Login.h
 iostream
@@ -46,7 +60,13 @@ vector
 Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
 
+/home/mateusz/CLionProjects/HomeBudget/Readable.cpp
+Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
+
+/home/mateusz/CLionProjects/HomeBudget/Readable.h
+cstdlib
+-
 string
 -
 vector
@@ -57,16 +77,36 @@ iostream
 -
 Login.h
 /home/mateusz/CLionProjects/HomeBudget/Login.h
+Transaction.h
+/home/mateusz/CLionProjects/HomeBudget/Transaction.h
+User.h
+/home/mateusz/CLionProjects/HomeBudget/User.h
 
-/home/mateusz/CLionProjects/HomeBudget/Ui.cpp
-Ui.h
-/home/mateusz/CLionProjects/HomeBudget/Ui.h
+/home/mateusz/CLionProjects/HomeBudget/Transaction.h
+string
+-
+iostream
+-
 
 /home/mateusz/CLionProjects/HomeBudget/Ui.h
 iostream
 -
 string
 -
+
+/home/mateusz/CLionProjects/HomeBudget/User.cpp
+User.h
+/home/mateusz/CLionProjects/HomeBudget/User.h
+
+/home/mateusz/CLionProjects/HomeBudget/User.h
+string
+-
+iostream
+-
+Login.h
+/home/mateusz/CLionProjects/HomeBudget/Login.h
+Readable.h
+/home/mateusz/CLionProjects/HomeBudget/Readable.h
 
 /home/mateusz/CLionProjects/HomeBudget/main.cpp
 iostream

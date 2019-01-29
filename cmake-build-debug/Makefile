@@ -285,6 +285,33 @@ Ui.cpp.s:
 	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Ui.cpp.s
 .PHONY : Ui.cpp.s
 
+User.o: User.cpp.o
+
+.PHONY : User.o
+
+# target to build an object file
+User.cpp.o:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/User.cpp.o
+.PHONY : User.cpp.o
+
+User.i: User.cpp.i
+
+.PHONY : User.i
+
+# target to preprocess a source file
+User.cpp.i:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/User.cpp.i
+.PHONY : User.cpp.i
+
+User.s: User.cpp.s
+
+.PHONY : User.s
+
+# target to generate assembly for a file
+User.cpp.s:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/User.cpp.s
+.PHONY : User.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -339,6 +366,9 @@ help:
 	@echo "... Ui.o"
 	@echo "... Ui.i"
 	@echo "... Ui.s"
+	@echo "... User.o"
+	@echo "... User.i"
+	@echo "... User.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

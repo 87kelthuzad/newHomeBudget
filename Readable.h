@@ -5,21 +5,26 @@
 #ifndef HOMEBUDGET_READABLE_H
 #define HOMEBUDGET_READABLE_H
 
+#include <cstdlib>
 #include <string>
 #include <vector>
 #include <sstream>
 #include <iostream>
 #include "Login.h"
 #include "Transaction.h"
+#include "User.h"
 
 using namespace std;
 
 class Login;
 class Transaction;
+class User;
 
 class Readable {
 private:
     char delimeter = ',';
+
+//    User user;
 
 public:
     Readable();
@@ -40,7 +45,7 @@ public:
         int whoMany;
     };
 
-    struct user {
+    struct recordUser {
         int id;
         string nick;
         string nameUser;
@@ -50,15 +55,19 @@ public:
 
     vector<recordLogin> vRecordLogin;
     vector<recordTransaction> vRecordTransaction;
-    vector<user> vUser.;
+    vector<recordUser> vUser;
 
     inline char getDelimeter() { return delimeter; }
+
     void addRecordToVectorLogin(const string & line, vector<recordLogin> & v);
     void addRecordToVectorLogin(Login & login, vector<recordLogin> & v);
-    void addRecordToVectorTransaction(Transaction & transaction, vector<recordTransaction> & v);
+//    void addRecordToVectorTransaction(Transaction & transaction, vector<recordTransaction> & v);
+    void addRecordToVectorUser(const string & line, vector<recordUser> & v);
+    void addRecordToVectorUser(User & user, vector<recordUser> & v);
+
     vector<recordLogin> & getVectorLogin() { return vRecordLogin; }
     vector<recordTransaction> & getVectorTransaction() { return vRecordTransaction; }
-    vector<user> & getVectorUser() { return  vUser; }
+    vector<recordUser> & getVectorUser() { return  vUser; }
     vector<string> split(const std::string& s, char delimiter);
 };
 
