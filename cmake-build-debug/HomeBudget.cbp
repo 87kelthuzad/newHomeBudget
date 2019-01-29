@@ -108,6 +108,12 @@
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Readable.h">
 			<Option target="HomeBudget"/>
 		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Transaction.cpp">
+			<Option target="HomeBudget"/>
+		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Transaction.h">
+			<Option target="HomeBudget"/>
+		</Unit>
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Ui.cpp">
 			<Option target="HomeBudget"/>
 		</Unit>

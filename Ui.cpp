@@ -12,8 +12,10 @@ void Ui::showMainMenu() {
     cout << "==== Wybierz jedna z opcji ktora Cie interesuje ====" << endl;
     cout << "================ 1)Dodaj transakcje ================" << endl;
     cout << "========== 2)Pokaż transakcje tej sesji ============" << endl;
-    cout << "========== 3)Pokaż wszystkie transakcje ===========" << endl;
-    cout << "==5)Pokaz wszystkie transakcje z danego miesiaca: ==" << endl;
+    cout << "========== 3)Pokaż wszystkie transakcje ============" << endl;
+    cout << "= 5)Pokaz wszystkie transakcje z danego miesiaca: ==" << endl;
+    cout << "============ 6) Ustaw wysokość budzetu =============" << endl;
+    cout << "============== 7) Zakonczenie Programu =============" << endl;
     cout << "====================================================" << endl;
 }
 

@@ -231,6 +231,33 @@ Readable.cpp.s:
 	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Readable.cpp.s
 .PHONY : Readable.cpp.s
 
+Transaction.o: Transaction.cpp.o
+
+.PHONY : Transaction.o
+
+# target to build an object file
+Transaction.cpp.o:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Transaction.cpp.o
+.PHONY : Transaction.cpp.o
+
+Transaction.i: Transaction.cpp.i
+
+.PHONY : Transaction.i
+
+# target to preprocess a source file
+Transaction.cpp.i:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Transaction.cpp.i
+.PHONY : Transaction.cpp.i
+
+Transaction.s: Transaction.cpp.s
+
+.PHONY : Transaction.s
+
+# target to generate assembly for a file
+Transaction.cpp.s:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/Transaction.cpp.s
+.PHONY : Transaction.cpp.s
+
 Ui.o: Ui.cpp.o
 
 .PHONY : Ui.o
@@ -306,6 +333,9 @@ help:
 	@echo "... Readable.o"
 	@echo "... Readable.i"
 	@echo "... Readable.s"
+	@echo "... Transaction.o"
+	@echo "... Transaction.i"
+	@echo "... Transaction.s"
 	@echo "... Ui.o"
 	@echo "... Ui.i"
 	@echo "... Ui.s"
