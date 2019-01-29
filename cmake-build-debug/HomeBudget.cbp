@@ -120,6 +120,12 @@
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/Ui.h">
 			<Option target="HomeBudget"/>
 		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/User.cpp">
+			<Option target="HomeBudget"/>
+		</Unit>
+		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/User.h">
+			<Option target="HomeBudget"/>
+		</Unit>
 		<Unit filename="/home/mateusz/CLionProjects/HomeBudget/main.cpp">
 			<Option target="HomeBudget"/>
 		</Unit>

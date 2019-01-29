@@ -31,5 +31,11 @@ void FileCSV::saveLogin(const string &pathToFile, Login & login) {
     file.close();
 }
 
-
+void FileCSV::readUserFile(Readable &readable) {
+    string line;
+    while ( getline (file,line) ) {
+        readable.addRecordToVectorUser(line, readable.getVectorUser());
+    }
+    file.close();
+}
 

@@ -12,8 +12,11 @@
 
 #include "Readable.h"
 #include "Login.h"
+#include "User.h"
+
 class Readable;
 class Login;
+class User;
 
 using namespace std;
 
@@ -34,7 +37,8 @@ public:
 
     bool open(const string & pathToFile);
     void readLoginFile(Readable &readable);
-    void saveLogin(const string &pathToFile, Login & login);
+    void readUserFile(Readable &readable);
+    void saveLogin(const string & pathToFile, Login & login);
 };
 
 #endif //HOMEBUDGET_FILECSV_H

@@ -46,10 +46,18 @@ void Controller::loopLogin() {
         }
     }
 
-    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
+    isOpenFile = fileCSV.open(user.getPathToFileUser());
     if (!isOpenFile) {
         exit(EXIT_FAILURE);
     }
+
+    fileCSV.readUserFile(readable);
+    user.setCurrentUser(login,readable);
+
+//    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
+//    if (!isOpenFile) {
+//        exit(EXIT_FAILURE);
+//    }
 
     while (true) {
         ui.showMainMenu();
