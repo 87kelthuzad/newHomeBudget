@@ -57,3 +57,36 @@ void Readable::addRecordToVectorUser(const string &line, vector<recordUser> & v)
         }
     }
 }
+
+void Readable::addRecordToVectorTransaction(const string & line, vector<Readable::recordTransaction> &v) {
+    vector<string> splitString = split(line, getDelimeter());
+    size_t size = splitString.size();
+    recordTransaction r;
+
+    for (int index = 0; index < size; ++index) {
+        if (index == 0) {
+            r.id = atoi(splitString[index].c_str());
+        } else if (index == 1) {
+            r.nick = splitString[index];
+        } else if (index == 2) {
+            r.nameUser = splitString[index];
+        } else if (index == 3) {
+            r.lastNameUser = splitString[index];
+        } else if (index == 4) {
+            r.typeTransaction = splitString[index];
+        } else if (index == 5) {
+            r.date = splitString[index];
+        } else if (index == 6) {
+            r.whoMany = atoi(splitString[index].c_str());
+            v.push_back(r);
+        }
+    }
+}
+
+void Readable::addRecordToVectorTransaction(Transaction &transaction, vector<Readable::recordTransaction> &v) {
+    recordTransaction r = {transaction.getId(), transaction.getNick(),
+                           transaction.getNameUser(), transaction.getLastNameUset(),
+                           transaction.getTypeTransaction(), transaction.getDate(),
+                           transaction.getWhoMany()};
+    v.push_back(r);
+}

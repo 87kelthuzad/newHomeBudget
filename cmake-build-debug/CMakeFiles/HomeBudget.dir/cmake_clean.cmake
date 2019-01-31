@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HomeBudget.dir/Readable.cpp.o"
   "CMakeFiles/HomeBudget.dir/Transaction.cpp.o"
   "CMakeFiles/HomeBudget.dir/User.cpp.o"
+  "CMakeFiles/HomeBudget.dir/LocalTime.cpp.o"
   "HomeBudget.pdb"
   "HomeBudget"
 )

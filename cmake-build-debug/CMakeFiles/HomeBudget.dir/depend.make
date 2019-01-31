@@ -4,6 +4,7 @@
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../Controller.cpp
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../Controller.h
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../FileCSV.h
+CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../LocalTime.h
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../Login.h
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../Readable.h
 CMakeFiles/HomeBudget.dir/Controller.cpp.o: ../Transaction.h
@@ -16,6 +17,9 @@ CMakeFiles/HomeBudget.dir/FileCSV.cpp.o: ../Login.h
 CMakeFiles/HomeBudget.dir/FileCSV.cpp.o: ../Readable.h
 CMakeFiles/HomeBudget.dir/FileCSV.cpp.o: ../Transaction.h
 CMakeFiles/HomeBudget.dir/FileCSV.cpp.o: ../User.h
+
+CMakeFiles/HomeBudget.dir/LocalTime.cpp.o: ../LocalTime.cpp
+CMakeFiles/HomeBudget.dir/LocalTime.cpp.o: ../LocalTime.h
 
 CMakeFiles/HomeBudget.dir/Login.cpp.o: ../Login.cpp
 CMakeFiles/HomeBudget.dir/Login.cpp.o: ../Login.h
@@ -43,6 +47,7 @@ CMakeFiles/HomeBudget.dir/User.cpp.o: ../User.h
 
 CMakeFiles/HomeBudget.dir/main.cpp.o: ../Controller.h
 CMakeFiles/HomeBudget.dir/main.cpp.o: ../FileCSV.h
+CMakeFiles/HomeBudget.dir/main.cpp.o: ../LocalTime.h
 CMakeFiles/HomeBudget.dir/main.cpp.o: ../Login.h
 CMakeFiles/HomeBudget.dir/main.cpp.o: ../Readable.h
 CMakeFiles/HomeBudget.dir/main.cpp.o: ../Transaction.h

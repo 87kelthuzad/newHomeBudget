@@ -20,6 +20,7 @@ public:
     void successLogin();
     void failLogin();
     void ending();
+    void showTypeTransaction();
 };
 
 

@@ -177,6 +177,33 @@ FileCSV.cpp.s:
 	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/FileCSV.cpp.s
 .PHONY : FileCSV.cpp.s
 
+LocalTime.o: LocalTime.cpp.o
+
+.PHONY : LocalTime.o
+
+# target to build an object file
+LocalTime.cpp.o:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/LocalTime.cpp.o
+.PHONY : LocalTime.cpp.o
+
+LocalTime.i: LocalTime.cpp.i
+
+.PHONY : LocalTime.i
+
+# target to preprocess a source file
+LocalTime.cpp.i:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/LocalTime.cpp.i
+.PHONY : LocalTime.cpp.i
+
+LocalTime.s: LocalTime.cpp.s
+
+.PHONY : LocalTime.s
+
+# target to generate assembly for a file
+LocalTime.cpp.s:
+	$(MAKE) -f CMakeFiles/HomeBudget.dir/build.make CMakeFiles/HomeBudget.dir/LocalTime.cpp.s
+.PHONY : LocalTime.cpp.s
+
 Login.o: Login.cpp.o
 
 .PHONY : Login.o
@@ -354,6 +381,9 @@ help:
 	@echo "... FileCSV.o"
 	@echo "... FileCSV.i"
 	@echo "... FileCSV.s"
+	@echo "... LocalTime.o"
+	@echo "... LocalTime.i"
+	@echo "... LocalTime.s"
 	@echo "... Login.o"
 	@echo "... Login.i"
 	@echo "... Login.s"

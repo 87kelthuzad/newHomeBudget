@@ -13,6 +13,7 @@
 #include "Readable.h"
 #include "Transaction.h"
 #include "User.h"
+#include "LocalTime.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ private:
     Readable readable;
     Transaction transaction;
     User user;
+    LocalTime localTime;
 
     string nick;
     string password;
