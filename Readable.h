@@ -24,6 +24,7 @@ class Readable {
 private:
     char delimeter = ',';
     int lastNumberIdUser = 0;
+    int lastNumberIdTransaction =0;
 
 //    User user;
 
@@ -61,13 +62,15 @@ public:
     inline char getDelimeter() { return delimeter; }
 
     void setLastNumberIdUser(int number) { this->lastNumberIdUser = number; }
+    void setLastNumberIdTransaction(int number) {this->lastNumberIdTransaction = number; }
     int getLastNumberIdUser() { return lastNumberIdUser; }
+    int getLastNumberIdTransaction() { return lastNumberIdTransaction; }
 
     void addRecordToVectorLogin(const string & line, vector<recordLogin> & v);
     void addRecordToVectorLogin(Login & login, vector<recordLogin> & v);
-//    void addRecordToVectorTransaction(Transaction & transaction, vector<recordTransaction> & v);
+    void addRecordToVectorTransaction(const string & line, vector<recordTransaction> & v);
+    void addRecordToVectorTransaction(Transaction &transaction, vector<recordTransaction> &v);
     void addRecordToVectorUser(const string & line, vector<recordUser> & v);
-    void addRecordToVectorUser(User & user, vector<recordUser> & v);
 
     vector<recordLogin> & getVectorLogin() { return vRecordLogin; }
     vector<recordTransaction> & getVectorTransaction() { return vRecordTransaction; }

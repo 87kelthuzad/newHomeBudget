@@ -25,6 +25,8 @@ Transaction.h
 /home/mateusz/CLionProjects/HomeBudget/Transaction.h
 User.h
 /home/mateusz/CLionProjects/HomeBudget/User.h
+LocalTime.h
+/home/mateusz/CLionProjects/HomeBudget/LocalTime.h
 
 /home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp
 FileCSV.h
@@ -45,6 +47,12 @@ Login.h
 /home/mateusz/CLionProjects/HomeBudget/Login.h
 User.h
 /home/mateusz/CLionProjects/HomeBudget/User.h
+
+/home/mateusz/CLionProjects/HomeBudget/LocalTime.h
+ctime
+-
+string
+-
 
 /home/mateusz/CLionProjects/HomeBudget/Login.h
 iostream
@@ -95,4 +103,10 @@ Login.h
 /home/mateusz/CLionProjects/HomeBudget/Login.h
 Readable.h
 /home/mateusz/CLionProjects/HomeBudget/Readable.h
+
+/home/mateusz/CLionProjects/HomeBudget/main.cpp
+iostream
+-
+Controller.h
+/home/mateusz/CLionProjects/HomeBudget/Controller.h
 

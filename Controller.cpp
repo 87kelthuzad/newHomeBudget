@@ -59,15 +59,17 @@ void Controller::loopLogin() {
                 exit(EXIT_FAILURE);
         }
     }
-    isOpenFile = fileCSV.open(user.getPathToFileUser());
+
+    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
     if (!isOpenFile) {
         exit(EXIT_FAILURE);
     }
-    cout << user.recordUser.id << "" << user.recordUser.nick << " " << user.recordUser.lastNameUser << endl;
-
-//    isOpenFile = fileCSV.open(transaction.getPathToTransactionFile());
-//    if (!isOpenFile) {
-//        exit(EXIT_FAILURE);
+    fileCSV.readTransactionFile(readable);
+    readable.setLastNumberIdTransaction(readable.getVectorTransaction().rbegin()->id);
+//    for (auto item: readable.getVectorTransaction()) {
+//        cout << item.id << " " << item.nick << " "
+//        << item.nameUser << " " << item.lastNameUser << " "
+//        << item.typeTransaction << " " << item.date << " " << item.whoMany << endl;
 //    }
 
     while (true) {
@@ -76,8 +78,33 @@ void Controller::loopLogin() {
         cin >> option;
         switch (option) {
             case 1:
-
-                exit(EXIT_FAILURE);
+                ui.showTypeTransaction();
+                char option1;
+                cin >> option1;
+                switch (option1) {
+                    case 'S':
+                        transaction.setTypeTransaction("sklep");
+                        break;
+                    case 'I':
+                        transaction.setTypeTransaction("internet");
+                        break;
+                    default:
+                        transaction.setTypeTransaction("brak");
+                        break;
+                }
+                transaction.setDate(localTime.getTimeDay() + "-"
+                        + localTime.getTimeMonth() + "-" + localTime.getTimeYear());
+                cout << "Ile wydano pieniedzy: ";
+                transaction.setWhoMany(cin);
+                transaction.setNick(user.recordUser.nick);
+                transaction.setId(readable.getLastNumberIdTransaction()+1);
+                transaction.setNameUser(user.recordUser.nameUser);
+                transaction.setLastNameUser(user.recordUser.lastNameUser);
+                readable.addRecordToVectorTransaction(transaction, readable.getVectorTransaction());
+                fileCSV.saveTransaction(transaction.getPathToTransactionFile(), transaction);
+                break;
+            case 7:
+                exit(EXIT_SUCCESS);
         }
     }
 }

@@ -31,16 +31,17 @@ public:
     FileCSV();
     ~FileCSV();
 
-    void setPathToFile(const string & pathToFile) { this->pathToFile = pathToFile; };
+    void setPathToFile(const string &pathToFile) { this->pathToFile = pathToFile; };
     inline string getPathToFile() { return pathToFile; };
     inline string getDelimeter() { return delimeter; };
 
-    bool open(const string & pathToFile);
+    bool open(const string &pathToFile);
     void readLoginFile(Readable &readable);
     void readUserFile(Readable &readable);
-    void saveLogin(const string & pathToFile, Login & login);
-    void saveUser(const string & pathToFile, Login &login,
-            Readable &readable);
+    void saveLogin(const string &pathToFile, Login &login);
+    void saveUser(const string &pathToFile, Login &login, Readable &readable);
+    void readTransactionFile(Readable &readable);
+    void saveTransaction(const string &pathToFile, Transaction &transaction);
 };
 
 #endif //HOMEBUDGET_FILECSV_H

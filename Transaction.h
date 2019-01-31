@@ -8,6 +8,7 @@
 #include <string>
 #include <iostream>
 
+
 using namespace std;
 
 struct recordTransaction {
@@ -29,14 +30,23 @@ public:
     ~Transaction();
 
     string getPathToTransactionFile() { return pathToTransactionFile; }
+    recordTransaction getRecordTransaction() { return sRecordTransaction; }
 
-    void setDate(istream& stream) { stream >> sRecordTransaction.date; }
-    void setTypeTransaction(istream& stream) { stream >> sRecordTransaction.typeTransaction; }
+    int getId() { return sRecordTransaction.id; }
+    string getNick() { return  sRecordTransaction.nick; }
+    string getNameUser() { return  sRecordTransaction.nameUser; }
+    string getLastNameUset() { return sRecordTransaction.lastNameUser; }
+    string getTypeTransaction() { return  sRecordTransaction.typeTransaction; }
+    string getDate() { return  sRecordTransaction.date; }
+    int getWhoMany() { return  sRecordTransaction.whoMany; }
+
+    void setDate(string date) { sRecordTransaction.date = date; }
+    void setTypeTransaction(string type) { sRecordTransaction.typeTransaction = type; }
     void setWhoMany(istream& stream) { stream >> sRecordTransaction.whoMany; }
-    void setId(int id) { this->sRecordTransaction.id = id; }
-    void setNick(string nick) { this->sRecordTransaction.nick; }
-    void setNameUser(string nameUser) { this->sRecordTransaction.nameUser; }
-    void setLastNameUser(string lastNameUser) { this->sRecordTransaction.lastNameUser; }
+    void setId(int id) { sRecordTransaction.id = id; }
+    void setNick(string nick) { sRecordTransaction.nick = nick; }
+    void setNameUser(string nameUser) { sRecordTransaction.nameUser = nameUser; }
+    void setLastNameUser(string lastNameUser) { sRecordTransaction.lastNameUser = lastNameUser; }
 };
 
 #endif //HOMEBUDGET_TRANSACTION_H

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mateusz/CLionProjects/HomeBudget/Controller.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/Controller.cpp.o"
   "/home/mateusz/CLionProjects/HomeBudget/FileCSV.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/FileCSV.cpp.o"
+  "/home/mateusz/CLionProjects/HomeBudget/LocalTime.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/LocalTime.cpp.o"
   "/home/mateusz/CLionProjects/HomeBudget/Login.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/Login.cpp.o"
   "/home/mateusz/CLionProjects/HomeBudget/Readable.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/Readable.cpp.o"
   "/home/mateusz/CLionProjects/HomeBudget/Transaction.cpp" "/home/mateusz/CLionProjects/HomeBudget/cmake-build-debug/CMakeFiles/HomeBudget.dir/Transaction.cpp.o"
