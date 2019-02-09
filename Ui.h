@@ -8,6 +8,10 @@
 #include <iostream>
 #include <string>
 
+#include "Login.h"
+
+class Login;
+
 using namespace std;
 
 class Ui {
@@ -21,6 +25,7 @@ public:
     void failLogin();
     void ending();
     void showTypeTransaction();
+    void setLogin(Login& login);
 };
 
 

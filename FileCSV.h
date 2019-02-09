@@ -13,10 +13,12 @@
 #include "Readable.h"
 #include "Login.h"
 #include "User.h"
+#include "Transaction.h"
 
 class Readable;
 class Login;
 class User;
+class Transaction;
 
 using namespace std;
 

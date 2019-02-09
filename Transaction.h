@@ -7,7 +7,17 @@
 
 #include <string>
 #include <iostream>
+#include "LocalTime.h"
+#include "Ui.h"
+#include "User.h"
+#include "Readable.h"
+#include "FileCSV.h"
 
+class LocalTime;
+class Ui;
+class User;
+class Readable;
+class FileCSV;
 
 using namespace std;
 
@@ -47,6 +57,9 @@ public:
     void setNick(string nick) { sRecordTransaction.nick = nick; }
     void setNameUser(string nameUser) { sRecordTransaction.nameUser = nameUser; }
     void setLastNameUser(string lastNameUser) { sRecordTransaction.lastNameUser = lastNameUser; }
+
+    void setNewRecord(Readable& readable,LocalTime& localTime,
+            User& user, Transaction& transaction, Ui& ui, FileCSV& fileCSV);
 };
 
 #endif //HOMEBUDGET_TRANSACTION_H

@@ -25,6 +25,7 @@ private:
     Transaction transaction;
     User user;
     LocalTime localTime;
+    FileCSV fileCSV;
 
     string nick;
     string password;
