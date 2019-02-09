@@ -51,3 +51,11 @@ void Ui::showTypeTransaction() {
     cout << "============== [S]klep lub [I]nternet ==============" << endl;
     cout << "====================================================" << endl;
 }
+
+void Ui::setLogin(Login& login) {
+    cout << "login: ";
+    login.setNick(cin);
+    cout << "\npassword: ";
+    login.setPassword(cin);
+    cout << endl;
+}

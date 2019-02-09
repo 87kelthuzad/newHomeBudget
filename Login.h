@@ -8,12 +8,20 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 #include "Readable.h"
+#include "FileCSV.h"
+#include "User.h"
+#include "Ui.h"
+
 
 using namespace std;
 
 class Readable;
+class FileCSV;
+class User;
+class Ui;
 
 struct recordLogin {
     string nick;
@@ -35,6 +43,7 @@ public:
     inline string getPassword() { return  sRecordLogin.password; }
     string getPathToLoginsFile() { return pathToLoginsFile; }
     bool comparisonOfNickAndPasswordWithCVS(Readable & readable);
+    void setNewRecrod(Readable& readable, FileCSV& fileCSV, User& user, Login& login, Ui &ui);
 };
 
 
